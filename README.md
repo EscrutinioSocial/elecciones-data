@@ -29,6 +29,7 @@ Social](https://github.com/EscrutinioSocial/escrutinio-social).
 
 ### Cordoba Justicia Electoral
 
+ * `2007.tar.gz` datos scrapeados de elecciones del 2007 por circuito, por seccion y por localidad.
  * `2011.tar.gz` datos scrapeados de elecciones del 2011 por circuito, por seccion y por localidad.
  * `2015.tar.gz` datos scrapeados de elecciones del 2015 por circuito, por seccion y por localidad.
  * `2019.tar.gz` datos scrapeados de elecciones del 2019 por circuito, por seccion y por localidad.
@@ -44,3 +45,4 @@ Social](https://github.com/EscrutinioSocial/escrutinio-social).
   * `escrutinio2019.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2019.
   * `escrutinio2015.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2015.
   * `escrutinio2011.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2011.
+  * `escrutinio2007.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2007.
