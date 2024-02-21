@@ -43,6 +43,8 @@ def main():
 
     counter = 0
 
+    special_characters = ["/"]
+
     # starts scraping per each year selected
     for link in links:
         driver.get(link)
@@ -76,7 +78,12 @@ def main():
                 table = driver.find_elements_by_tag_name("table")[0]
 
                 try:
-                    with open("LOCALIDAD_"+ltext+"_"+cotext+"_"+str(years[counter])+".csv", 'w', newline='') as csvfile:
+                    filepath = "LOCALIDAD_"+ltext+"_" + \
+                        cotext+"_"+str(years[counter])+".csv"
+                    for char in special_characters:
+                        if char in filepath:
+                            filepath = filepath.replace(char, "")
+                    with open(filepath, 'w', newline='') as csvfile:
                         wr = csv.writer(csvfile)
                         rows = table.find_elements_by_tag_name('tr')
                         rows = rows[4:]
@@ -138,7 +145,12 @@ def main():
                 table = driver.find_elements_by_tag_name("table")[0]
 
                 try:
-                    with open("CIRCUITO_"+ctext+"_"+cotext+"_"+str(years[counter])+".csv", 'w', newline='') as csvfile:
+                    filepath = "CIRCUITO_"+ctext+"_" + \
+                        cotext+"_"+str(years[counter])+".csv"
+                    for char in special_characters:
+                        if char in filepath:
+                            filepath = filepath.replace(char, "")
+                    with open(filepath, 'w', newline='') as csvfile:
                         wr = csv.writer(csvfile)
                         rows = table.find_elements_by_tag_name('tr')
                         rows = rows[4:]
@@ -199,7 +211,12 @@ def main():
                 table = driver.find_elements_by_tag_name("table")[0]
 
                 try:
-                    with open("SECCION_"+stext+"_"+cotext+"_"+str(years[counter])+".csv", 'w', newline='') as csvfile:
+                    filepath = "SECCION_"+stext+"_" + \
+                        cotext+"_"+str(years[counter])+".csv"
+                    for char in special_characters:
+                        if char in filepath:
+                            filepath = filepath.replace(char, "")
+                    with open(filepath, 'w', newline='') as csvfile:
                         wr = csv.writer(csvfile)
                         rows = table.find_elements_by_tag_name('tr')
                         rows = rows[4:]
