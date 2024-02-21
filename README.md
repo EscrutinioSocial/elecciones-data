@@ -27,7 +27,12 @@ Social](https://github.com/EscrutinioSocial/escrutinio-social).
     datosoficiales.com.ar correspondiente a las elecciones de intendente de
 	Córdoba capital.
 
+### Cordoba Justicia Electoral
 
+ * `2011.tar.gz` datos scrapeados de elecciones del 2011 por circuito, por seccion y por localidad.
+ * `2015.tar.gz` datos scrapeados de elecciones del 2015 por circuito, por seccion y por localidad.
+ * `2019.tar.gz` datos scrapeados de elecciones del 2019 por circuito, por seccion y por localidad.
+ * `2023.tar.gz` datos scrapeados de elecciones del 2023 por circuito, por seccion y por localidad.
 
 # Scripts
 
@@ -35,3 +40,7 @@ Social](https://github.com/EscrutinioSocial/escrutinio-social).
   para intendente de Córdoba capital.
   * `import-gobernador-datos-oficiales-com-ar.py`, lo mismo pero para gobernador
   de Córdoba.
+  * `escrutinio2023.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2023.
+  * `escrutinio2019.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2019.
+  * `escrutinio2015.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2015.
+  * `escrutinio2011.py` scrapper de datos oficiales de la justicia electoral de Cordoba de elecciones 2011.
